@@ -38,7 +38,7 @@ app.get('/',(req, res) => {
     // res.send('<h1>hello express<h1>')
     res.render('home.hbs', {
         pageTitle: 'Home page',
-        welcomeMessage: 'Welcome to Nathan\'s great site, motherfucker!'
+        welcomeMessage: 'Welcome to Nathan\'s great site!'
     })
 })
 
