@@ -48,8 +48,10 @@ app.get('/about', (req, res) => {
     })
 })
 
-app.get('/bad', (req, res) => {
-    res.status(200).send('Bad!')
+app.get('/portfolio', (req, res) => {
+    res.render('portfolio.hbs', {
+        pageTitle: 'Portfolio page'
+    })
 })
 
 app.listen(process.env.PORT || 3000, () => {
